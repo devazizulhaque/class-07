@@ -1,0 +1,159 @@
+.box{
+    height: 500px;
+    width: 500px;
+    background-color: gray;
+    position: sticky;
+    right: 10px;
+    top: 0px;
+}
+.col-1{width: 8.33%}
+.col-2{width: 16.66%}
+.col-3{width: 25%}
+.col-4{width: 33.33%}
+.col-5{width: 41.66%}
+.col-6{width: 50%}
+.col-7{width: 58.33%}
+.col-8{width: 66.66%}
+.col-9{width: 75%}
+.col-10{width: 83.33%}
+.col-11{width: 91.66%}
+.col-12{width: 100%}
+
+[class*='col-']{
+    float: left;
+    border: 1px solid gray;
+    height: 30px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.row:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.container{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.h-50{height: 50px}
+.h-200{height: 200px;}
+.h-600{height: 600px}
+.h-300{height: 300px}
+@media screen and (max-width: 600px){
+    [class*='col-']{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1000px){
+    .col-m-1{width: 8.33%}
+    .col-m-2{width: 16.66%}
+    .col-m-3{width: 25%}-m
+    .col-m-4{width: 33.33%}
+    .col-m-5{width: 41.66%}
+    .col-m-6{width: 50%}
+    .col-m-7{width: 58.33%}
+    .col-m-8{width: 66.66%}
+    .col-m-9{width: 75%}
+    .col-m-10{width: 83.33%}
+    .col-m-11{width: 91.66%}
+    .col-m-12{width: 100%}
+
+    .position-relative{
+        position: relative;
+    }
+    .search-position{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    /*.h-300{*/
+    /*    width: 50%;*/
+    /*}*/
+}
+
+
+
+/*box-one*/
+.box-one{
+    height: 500px;
+    width: 800px;
+    background-color: green;
+    position: relative;
+}
+.box-two{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+.box-three{
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+    margin: 100px;
+    transition: 1s;
+    float: left;
+    /*transform: scale(1.5);*/
+}
+.m-50{margin: 50px}
+.box-three:hover{
+    transform: scale(1.5, 3);
+}
+.box-four{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background-color: blueviolet;
+    transition: 3s;
+    float: left;
+}
+.box-four:hover{
+    transform: rotate(2880deg);
+}
+.box-five{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background-color: chocolate;
+    float: left;
+    transition: 1s;
+}
+.box-five:hover{
+    transform: translate(-200px, -100px);
+}
+.box-six{
+    height: 300px;
+    width: 200px;
+    background-color: darkblue;
+    transition: 100s;
+    float: left;
+}
+.box-six:hover{
+    transform: skew(90deg);
+}
+
+
+.div-one{
+    height: 200px;
+    width: 100px;
+    float: left;
+    margin-left: 20px;
+    background-color: darkslateblue;
+    transform: skewY(45deg);
+}
+.div-two{
+    height: 200px;
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    background-color: darkslateblue;
+    transform: skewY(-45deg);
+}
